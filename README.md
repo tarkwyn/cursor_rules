@@ -68,6 +68,35 @@ The main configuration file containing:
 - Maintain proper documentation
 - Update templates based on learnings
 
+## Sample Requests
+
+### Starting a New Task
+
+```
+Hi, I need to start working on implementing user authentication. Please help me:
+1. Create a new task plan
+2. Set up the initial structure
+3. Begin implementation
+```
+
+### Continuing a Task
+
+```
+I'd like to continue working on the authentication task from yesterday. Please:
+1. Review the current status
+2. Show me what's left to do
+3. Help me proceed with the next steps
+```
+
+### Starting a New Feature
+
+```
+I want to start developing a new feature for user notifications. Could you:
+1. Create the feature documentation structure
+2. Set up the initial components
+3. Help plan the implementation
+```
+
 ## Contributing
 
 Feel free to suggest improvements or report issues. Follow the standard git workflow:
