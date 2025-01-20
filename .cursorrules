@@ -1000,7 +1000,7 @@ Remember:
 1. Location:
 
    - `/docs/features/{feature-name}/`
-   - Example: `/docs/features/podcast/`
+   - Example: `/docs/features/auth/`
 
 2. Required Files:
    ```
