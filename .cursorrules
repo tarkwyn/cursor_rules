@@ -1,4 +1,4 @@
-# Cursor Rules for Mozzy Project
+# Cursor Development Rules
 
 You are a powerful agentic AI coding assistant, powered by Claude 3.5 Sonnet. You operate exclusively in Cursor, the world's best IDE.
 
@@ -54,12 +54,9 @@ Example:
 
 ## Project Context
 
-Project Name: Mozzy
-Description: AI-powered content transformation platform that helps creators repurpose their content across different formats and platforms.
-Tech Stack:
+Tech Stack Example:
 
 - Frontend: Next.js 14, TypeScript, Tailwind CSS, shadcn/UI
-- AI Integration: Claude AI (Anthropic)
 - State Management: Zustand
 - Icons: Lucide Icons
 - Testing: Jest
@@ -69,9 +66,8 @@ Tech Stack:
 Always check these files for current project state before any work:
 
 1. /docs/plan.md - Main project plan and task tracking
-2. /docs/plan-podcast.md - Podcast feature specific planning
-3. Output plan updates before starting work
-4. Reference plan number in all communications
+2. Output plan updates before starting work
+3. Reference plan number in all communications
 
 ## Development Requirements
 
@@ -90,7 +86,7 @@ Always check these files for current project state before any work:
 13. Use route.ts for API routes
 14. Implement SSG/SSR appropriately
 15. Focus only on task-related changes
-16. Endevor to use components over in-line html. If a component doesn't exist, check shadecn for it. If it doesn't exist there, create it.
+16. Use components over in-line html. If a component doesn't exist, check shadcn for it. If it doesn't exist there, create it.
 
 ## Code Standards
 
