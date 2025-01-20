@@ -12,20 +12,33 @@ This repository contains a collection of development standards, best practices, 
 .
 ├── .cursorrules              # Main cursor rules and standards
 └── docs/
-    └── templates/           # Project templates
-        ├── feature/         # Feature documentation templates
-        │   ├── README.md
-        │   ├── api.md
-        │   ├── architecture.md
-        │   ├── components.md
-        │   └── testing.md
-        ├── feature-documentation-template.md
-        └── task-plan-template.md
+    ├── working-memory/      # Active context
+    │   ├── open/           # Active tasks
+    │   │   └── {task-id}/ # Task-specific directory
+    │   │       └── .plan  # Task plan
+    │   └── done/          # Completed tasks
+    ├── templates/          # Project templates
+    │   ├── feature/        # Feature documentation templates
+    │   │   ├── README.md
+    │   │   ├── api.md
+    │   │   ├── architecture.md
+    │   │   ├── components.md
+    │   │   └── testing.md
+    │   ├── feature-documentation-template.md
+    │   └── task-plan-template.md
+    └── cursor_settings.md  # Cursor IDE settings
 ```
 
 ## Key Components
 
-### 1. Cursor Rules (.cursorrules)
+### 1. Working Memory (docs/working-memory)
+
+- Active task tracking and context
+- Open tasks in progress
+- Completed task history
+- Task plans and documentation
+
+### 2. Cursor Rules (.cursorrules)
 
 The main configuration file containing:
 
@@ -37,7 +50,7 @@ The main configuration file containing:
 - Logging standards
 - Type system rules
 
-### 2. Templates
+### 3. Templates
 
 #### Feature Documentation
 

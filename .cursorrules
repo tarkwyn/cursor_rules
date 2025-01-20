@@ -20,6 +20,25 @@ The task may require creating a new codebase, modifying or debugging an existing
 
 3. Working Memory and State:
 
+   Directory Structure:
+
+   ```
+   /docs/
+   ├── working-memory/           # Active context
+   │   ├── open/                # Active tasks
+   │   │   └── {task-id}/      # Task-specific directory
+   │   │       └── .plan       # Task plan
+   │   └── done/               # Completed tasks
+   ├── templates/              # Project templates
+   │   └── feature/           # Feature documentation templates
+   │       ├── README.md
+   │       ├── api.md
+   │       ├── architecture.md
+   │       ├── components.md
+   │       └── testing.md
+   └── cursor_settings.md     # Cursor IDE settings
+   ```
+
    - Review `docs/composer-history` for current and previous tasks
    - Every run should use composer history and `.plan`
    - Always reference the `.cursorrules` file
@@ -213,20 +232,44 @@ Type Documentation Rules:
 
 ## Directory Structure
 
-/app (Next.js 14 App Router):
+### Project Documentation Structure
 
-- /actions: Server actions
-- /api: API routes
-- /components: UI components
-  - /blocks: Content blocks
-  - /ui: shadcn/UI components
-- /config: Configuration
-- /constants: Constants
-- /hooks: React hooks
-- /services: Business logic
-- /stores: Zustand stores
-- /types: TypeScript types
-- /utils: Utilities
+```
+/docs/
+├── working-memory/           # Active context
+│   ├── open/                # Active tasks
+│   │   └── {task-id}/      # Task-specific directory
+│   │       └── .plan       # Task plan
+│   └── done/               # Completed tasks
+├── templates/              # Project templates
+│   └── feature/           # Feature documentation templates
+│       ├── README.md
+│       ├── api.md
+│       ├── architecture.md
+│       ├── components.md
+│       └── testing.md
+└── cursor_settings.md     # Cursor IDE settings
+```
+
+### Application Directory Structure
+
+```
+# Replace this section with your application's directory structure
+# Example for Next.js 14:
+/app/
+├── actions/               # Server actions
+├── api/                  # API routes
+├── components/           # UI components
+│   ├── blocks/          # Content blocks
+│   └── ui/              # shadcn/UI components
+├── config/              # Configuration
+├── constants/           # Constants
+├── hooks/               # React hooks
+├── services/            # Business logic
+├── stores/              # State management
+├── types/               # TypeScript types
+└── utils/               # Utilities
+```
 
 ## Best Practices
 
@@ -525,7 +568,7 @@ Remember:
 /docs/
 ├── working-memory/           # Active context
 │   ├── open/                # Active tasks
-│   │   └── {task-id}/
+│   │   └── {task-id}/      # Task-specific directory
 │   │       └── .plan       # Task plan
 │   └── done/               # Completed tasks
 ├── templates/              # Project templates
