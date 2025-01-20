@@ -58,7 +58,8 @@ The main configuration file containing:
 
 1. Copy `.cursorrules` to your project root
 2. Copy template files to your project's docs directory
-3. Follow the standards and practices outlined in the rules
+3. Copy the rules from `docs/cursor_settings.md` into your Cursor settings under 'Rules for AI'
+4. Follow the standards and practices outlined in the rules
 
 ## Best Practices
 
